@@ -1,0 +1,149 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+  }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(89, 147, 106) 0%, rgba(64,143,58,1) 31%);
+  }
+  
+  .container form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  
+  .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .container form .row .col{
+    flex:1 1 250px;
+  }
+  
+  .container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .container form .row .col .inputBox{
+    margin:15px 0;
+  }
+  
+  .container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  .button{
+    display: flex;
+
+
+}
+
+  .container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #27ae60;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn:hover{
+    background: #2ecc71;
+  }
+
+  .container form .submit-btn2{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: blue;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn2:hover{
+    background: rgb(71, 71, 205)
+  }
+
+  .container form .submit-btn3{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: red;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn3:hover{
+    background-color: rgb(170, 75, 75);
+  }
+
+  
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+    transition: transform 0.4s,top 0.4s;
+   
+}
+.con-hid{
+    visibility: hidden;
+}
